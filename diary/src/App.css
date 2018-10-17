@@ -8,9 +8,8 @@
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+  background-color: #1E90FF;
+  padding: 1.0px;
   color: white;
 }
 
@@ -20,6 +19,33 @@
 
 .App-intro {
   font-size: large;
+}
+
+.App-footer {
+  background-color: #1E90FF;
+  width: 100%;
+  color: white;
+  position : fixed;
+  bottom: 0px;
+}
+
+.footer-ul {
+  margin: 0px;
+  padding: 10px;
+}
+.footer-menu {
+  list-style: none;
+  display: inline-block;
+  width: 25%;
+  font-size: 0.3em;
+}
+
+.footer-menu-li {
+  display: block;
+}
+
+.App-image {
+  height: 30px;
 }
 
 @keyframes App-logo-spin {
