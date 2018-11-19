@@ -1,6 +1,6 @@
 import React from 'react'
-import twitter from './image/twitter.png'
-import './App.css'
+import twitter from '../image/twitter.png'
+import '../App.css'
 
 
 const Disp = () => {

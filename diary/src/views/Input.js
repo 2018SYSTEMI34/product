@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import '../App.css';
 
 const Input = () => {
   return (
@@ -8,8 +8,8 @@ const Input = () => {
         <div className="input">
           <input type="date" />
         </div>
-        <div className="inpit">
-          <textarea cols="50" rows="25" maxlength="" placeholder="日記を入力"></textarea>
+        <div>
+          <textarea cols="50" classaname="input" rows="25" maxlength="" placeholder="日記を入力"></textarea>
         </div>
         <input type="button" className="button" value="保存"/>
       </div>
