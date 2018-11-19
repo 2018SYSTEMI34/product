@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import './App.css'
-import Header from './Header.js'
-import Footer from './Footer.js'
-import Disp from './Disp.js'
-import Search from './Search.js'
-import Input from './Input.js'
-import Backup from './Backup.js'
+import Header from './views/Header.js'
+import Footer from './views/Footer.js'
+import Disp from './views/Disp.js'
+import Search from './views/Search.js'
+import Input from './views/Input.js'
+import Backup from './views/Backup.js'
 import {BrowserRouter, Route, Switch, Redirect} from 'react-router-dom'
 
 class App extends Component {

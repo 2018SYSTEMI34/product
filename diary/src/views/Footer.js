@@ -3,7 +3,7 @@ import home from './image/home.svg'
 import search from './image/search.svg'
 import registration from './image/registration.svg'
 import backup from './image/backup.svg'
-import './App.css'
+import '../App.css'
 import { Link } from 'react-router-dom'
 
 //フッター
