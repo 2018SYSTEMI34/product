@@ -1,18 +1,17 @@
 import React from 'react';
+import './App.css';
 
 const Input = () => {
   return (
     <div>
-      <div className="input_area">
-        <div className="date_area">
-          <input type="date">
+      <div className="main">
+        <div className="input">
+          <input type="date" />
         </div>
-        <div className="content">
-          <textarea></textarea>
+        <div className="inpit">
+          <textarea cols="50" rows="25" maxlength="" placeholder="日記を入力"></textarea>
         </div>
-        <div className="button_area">
-          <input type="button" value="保存"/>
-        </div>
+        <input type="button" className="button" value="保存"/>
       </div>
     </div>
   );

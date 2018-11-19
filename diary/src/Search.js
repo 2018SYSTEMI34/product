@@ -1,19 +1,18 @@
 import React from 'react';
+import './App.css';
 
 const Search = () => {
 
   const labSpace = {display: 'inline-block'}
 
   return (
-  <div style = {{width: '300px'}}>
-    <div style = {{textAlign: 'left', marginTop: 50}}>
-      <label>検索条件</label>
-    </div>
-    <div style = {{textAlign: 'center', width: '200px', marginTop: 20, marginLeft: 50}}>
-      <input type = 'date' className = 'Startday'/>
+  <div className="main">
+    <div className="search-title">検索条件</div>
+    <div className="search-date">
+      <input type = 'date' className = 'Startday'/>〜　
       <input type = 'date' className = 'Endday'/>
     </div>
-    <div style = {{width: '200px', marginTop: 20, marginLeft: 50}}>
+    <div className="search-week"> 
       <label style = {labSpace}>
         <input type = 'checkbox' className = 'Sunday' value = '1'/>日
       </label>
@@ -36,8 +35,8 @@ const Search = () => {
         <input type = 'checkbox' className = 'Saturday' value = '7'/>土
       </label>
     </div>
-    <div style = {{textAlign: 'center', width: '100px', marginTop: 100, marginLeft: 100}}>
-      <input type = 'button' className = 'SearchButton' value = '  検  索  '/>
+    <div>
+      <input type = 'button' className = 'button' value = '  検  索  '/>
     </div>
   </div>
   )
