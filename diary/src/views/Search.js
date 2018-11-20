@@ -14,25 +14,25 @@ const Search = () => {
     </div>
     <div className="search"> 
       <label style = {labSpace}>
-        <input type = 'checkbox' className = 'Sunday' value = '1'/>日
+        <input type = 'checkbox' className = 'Sunday' value = '0'/>日
       </label>
       <label style = {labSpace}>
-        <input type = 'checkbox' className = 'Monday' value = '2'/>月
+        <input type = 'checkbox' className = 'Monday' value = '1'/>月
       </label>
       <label style = {labSpace}>
-        <input type = 'checkbox' className = 'Tuesday' value = '3'/>火
+        <input type = 'checkbox' className = 'Tuesday' value = '2'/>火
       </label>
       <label style = {labSpace}>
-        <input type = 'checkbox' className = 'Wednesday' value = '4'/>水
+        <input type = 'checkbox' className = 'Wednesday' value = '3'/>水
       </label>
       <label style = {labSpace}>
-        <input type = 'checkbox' className = 'Thursday' value = '5'/>木
+        <input type = 'checkbox' className = 'Thursday' value = '4'/>木
       </label>
       <label style = {labSpace}>
-        <input type = 'checkbox' className = 'Friday' value = '6'/>金
+        <input type = 'checkbox' className = 'Friday' value = '5'/>金
       </label>
       <label style = {labSpace}>
-        <input type = 'checkbox' className = 'Saturday' value = '7'/>土
+        <input type = 'checkbox' className = 'Saturday' value = '6'/>土
       </label>
     </div>
     <div className="search">
