@@ -2,15 +2,9 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+  background-color: #1E90FF;
+  padding: 1.0px;
   color: white;
 }
 
@@ -18,11 +12,106 @@
   font-size: 1.5em;
 }
 
-.App-intro {
-  font-size: large;
+.App-footer {
+  background-color: #1E90FF;
+  width: 100%;
+  color: white;
+  position : fixed;
+  bottom: 0px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.footer-ul {
+  margin: 0px;
+  padding: 10px;
+}
+.footer-menu {
+  list-style: none;
+  display: inline-block;
+  width: 25%;
+  font-size: 0.5em;
+}
+
+.footer-menu-li {
+  display: block;
+  text-decoration: none;
+}
+
+.App-image {
+  height: 30px;
+}
+
+.main {
+  margin: 10px;
+  padding: 20px; 
+  color: #3f8afc;
+}
+
+.disp_area {
+  height: 100%;
+}
+
+.single_area {
+  color: #3f8afc;
+  background: #c6e0f8;
+  display: table;
+  table-layout: fixed;
+  text-align: center;
+  border-bottom: solid 0.1px #7fb1fc;
+  width: 100%;
+  height: auto;
+}
+
+.disp_content {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px;
+  font-size: 10px;
+}
+
+.disp_content_main {
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+  font-size: 1px;
+  width: 70%;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+.search-title {
+  margin: 10px;
+  padding: 2px;
+  text-align: left;
+}
+
+.search-date {
+  margin: 15px;
+  padding: 1px;
+  text-align: center;
+  border : 0.5px solid #afcdfa;
+}
+
+.search {
+  margin: 20px;
+  padding: 5px;
+  font-size: 13px;
+}
+
+.button {
+  margin: 30px;
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  color: white;
+  border: solid 2px #67c5ff;
+  background: #67c5ff;
+  border-radius: 3px;
+  transition: .4s;
+}
+
+.input {
+  margin: 5px;
+  padding: 3px;
+  border: 0.5px solid #afcdfa;
 }
