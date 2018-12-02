@@ -93,7 +93,7 @@ export default style = StyleSheet.create({
         padding: "5px",
         fontSize: 13,
     },
-    Button : {
+    SavaButton : {
         margin: "30px",
 //        display: "inline-block",
         padding: "0.5em 1em",
