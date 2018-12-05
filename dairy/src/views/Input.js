@@ -3,9 +3,8 @@
  */
 
 import React, { Component } from 'react';
-import { View, TextInput, Button} from 'react-native';
+import { View, TextInput, Button,StyleSheet,Alert} from 'react-native';
 import DatePicker from 'react-native-datepicker';
-import Style from '../style';
 import Dairy from '../db/diary';
 
 /**
@@ -34,6 +33,16 @@ export default class InputView extends Component {
             day : this.state.day,
             sentence : this.state.sentence
         });
+        
+        // アラートで登録完了を通知
+        Alert.alert(
+            "",
+            "保存完了しました。",
+            [
+              {text: 'OK', onPress: () => {}},
+            ],
+            { cancelable: false }
+          )
     }
 
     // 日付変更処理
@@ -46,9 +55,9 @@ export default class InputView extends Component {
     // 画面描画処理
     render() {
         return(
-            <View　style={Style.App}>
+            <View　style={style.App}>
                 <DatePicker
-                    style={Style.Input}
+                    style={style.Input}
                     date={this.state.date}
                     mode="date"
                     placeholder="select date"
@@ -71,3 +80,21 @@ export default class InputView extends Component {
         );
     }
 }
+
+// 登録画面のstyle管理
+const style = StyleSheet.create( {
+    App : {
+        textAlign : "center",
+        alignItems: "center",
+        justifyContent: "center",
+    },
+    Input : {
+        margin: 5,
+        padding: 3,
+        borderWidth : 1,
+        borderColor: "#afcdfa",
+        width:200,
+        alignItems: "center",
+        justifyContent: "center",
+    }
+});
