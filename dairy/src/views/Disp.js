@@ -39,7 +39,7 @@ export default class DispView extends Component {
                     <Text style={style.DispDateText}>{this.changeDay(item.writed_on.getDay())}</Text>
                 </View>
                 <View style={style.DispContentMain}>
-                    <Text style={style.DispDateText}>{item.sentence}</Text>
+                    <Text style={style.DispDateText}>{item.sentence.substr(0,20)}</Text>
                 </View>
                 <View style={style.DispContent}>
                     <Image source={require('../img/twitter.png')} style={style.DispImage}/>

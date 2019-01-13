@@ -16,7 +16,6 @@ const schema = {
     properties: {
         id : {type: "int"},
         writed_on: {type: "date"},
-        day: {type:"int"},
         sentence: {type: "string"},
     }
 };
@@ -33,7 +32,7 @@ export default class DiaryAccess {
      * 日記書き込み
      * idを指定した場合、更新処理
      * idを指定しない場合、登録処理
-     * @param {{id: number,writed_on: Date, day: number, sentence: string}} record テーブルに書き込むレコード
+     * @param {{id: number,writed_on: Date, sentence: string}} record テーブルに書き込むレコード
      */
     wrireDairy = (record) => {
         this.realm.write(() => {
@@ -41,7 +40,6 @@ export default class DiaryAccess {
                 "dairy",
                 {id:record.id ? record.id : this.maxId() + 1,
                  writed_on : record.writed_on,
-                 day : record.day,
                  sentence : record.sentence
                 },
                 true    

@@ -32,6 +32,7 @@ export default class RouterManagement extends Component {
                         initial
                         iconColor='red'
                         icon={TabBarIcon}
+                        init={true}
                         />
                     <Scene
                         key='search'
